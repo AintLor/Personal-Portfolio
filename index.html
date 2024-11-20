@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lor's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="photo-montage">
+            <img src="LORENZ.jpg" alt="Montage Image 1">
+            <img src="PULIS.jpg" alt="Montage Image 2">
+            <img src="HAD.jpg" alt="Montage Image 3">
+            <img src="MACBETH.jpg" alt="Montage Image 4">
+        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Lorenz Christian Libao, a Web Developer, Graphics Designer, and Photographer.</p>
+        <a href="#about" class="btn-portfolio">View My Profile</a>
+        <div class="overlay"></div>
+    </header>
+
+
+    <main>
+        <section id="about" class="glass-morphism">
+            <h2>About Me</h2>
+            <img src="LORENZ 1.jpg" alt="Lorenz Christian Libao" class="profile-pic">
+            <p>I am a 3rd year Front-End Developer enthusiast, experienced photographer, and graphics designer. I use Figma, Photoshop, and Canva for editing, and in terms of Front-End development, I use HTML, CSS, JavaScript, and React.</p>
+            
+            <section class="skills">
+                <h2>My Skills</h2>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="60%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">React</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="30%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Photography</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Graphic Designing</div>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="80%"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="portfolio" class="glass-morphism">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">    
+                        <img src="TEXT BASED PAINTER.png" alt="Project 2">
+                    <h3>Text Based Painter</h3>
+                    <p>It's a text based ASCII painter in c language.</p>
+                    <a href="https://github.com/AintLor/Text-Based-Painter" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Believe T-shirt.jpg" alt="Project 2">
+                    <h3>My First Tshirt Mockup Project</h3>
+                    <p>This is the first T-shirt design I've created using Adobe Photoshop.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="glass-morphism">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="mailto:libaoxd21@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+639124180027"><i class="fas fa-phone-alt"></i></a>    
+                <a href="https://github.com/AintLor" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-morphism">
+        <p>&copy; 2024 Lorenz Christian Libao. All rights reserved.</p>
+    </footer>
+
+    <div class="image-modal" id="imageModal">
+        <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
